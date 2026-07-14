@@ -1,0 +1,73 @@
+import type { MetadataRoute } from "next";
+
+const BASE_URL = "https://www.premiercapitaladvisor.com";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date("2026-07-01");
+
+  return [
+    {
+      url: BASE_URL,
+      lastModified,
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified,
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/contact`,
+      lastModified,
+      priority: 0.8,
+    },
+    
+    {
+      url: `${BASE_URL}/privacy-policy`,
+      lastModified,
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/terms-of-use`,
+      lastModified,
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/sebi-registration`,
+      lastModified,
+      priority: 0.5,
+    },
+
+    // Services
+    {
+      url: `${BASE_URL}/services/business-loans-working-capital`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/services/construction-finance`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/services/insurance-planning`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/services/Investment-Solutions`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/services/loans-against-property`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/services/stock-picks`,
+      lastModified,
+      priority: 0.9,
+    },
+  ];
+}
