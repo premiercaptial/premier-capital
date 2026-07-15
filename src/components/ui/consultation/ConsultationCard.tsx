@@ -1,6 +1,7 @@
 "use client";
 
 import { BRAND, TRUST_ITEMS } from "./constants";
+import Link from "next/link";
 
 interface ConsultationCardProps {
   onClose: () => void;
@@ -70,11 +71,13 @@ export default function ConsultationCard({
 
         </div>
 
-        <button
-          className="mt-8 w-full rounded-2xl bg-[#0B1F3A] py-4 font-semibold text-white transition hover:bg-[#14345f]"
-        >
-          Schedule Consultation
-        </button>
+        <Link
+  href="/#contact"
+  onClick={onClose}
+  className="mt-8 flex w-full items-center justify-center rounded-2xl bg-[#0B1F3A] py-4 font-semibold text-white transition hover:bg-[#14345f]"
+>
+  Schedule Consultation
+</Link>
 
         <button
           onClick={onClose}

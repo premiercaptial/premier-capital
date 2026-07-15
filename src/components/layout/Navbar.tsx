@@ -191,13 +191,15 @@ export default function Navbar() {
           {/* CTA */}
           <div className="flex items-center gap-3">
 
-            <Link
-              href="/login"
-              className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2.5 border border-[#C6A15B] text-[#C6A15B] text-[0.72rem] font-semibold tracking-[0.12em] uppercase transition-all duration-300 hover:bg-[#C6A15B] hover:text-white"
-            >
-              <LogIn size={13} />
-              Client Login
-            </Link>
+          <a
+  href="https://wealth.premiercapitaladvisor.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2.5 border border-[#C6A15B] text-[#C6A15B] text-[0.72rem] font-semibold tracking-[0.12em] uppercase transition-all duration-300 hover:bg-[#C6A15B] hover:text-white"
+>
+  <LogIn size={13} />
+  Client Login
+</a>
 
             <a
               href="#contact"
@@ -319,15 +321,16 @@ export default function Navbar() {
           })}
 
           <div className="border-t border-[#E8E4DC] pt-5 flex flex-col gap-3">
-
-            <Link
-              href="/login"
-              onClick={() => setMobileOpen(false)}
-              className="inline-flex items-center justify-center gap-2 border border-[#C6A15B] px-5 py-3 text-xs font-semibold uppercase tracking-widest text-[#C6A15B] transition-all duration-300 hover:bg-[#C6A15B] hover:text-white"
-            >
-              <LogIn size={13} />
-              Client Login
-            </Link>
+<a
+  href="https://wealth.premiercapitaladvisor.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setMobileOpen(false)}
+  className="inline-flex items-center justify-center gap-2 border border-[#C6A15B] px-5 py-3 text-xs font-semibold uppercase tracking-widest text-[#C6A15B] transition-all duration-300 hover:bg-[#C6A15B] hover:text-white"
+>
+  <LogIn size={13} />
+  Client Login
+</a>
 
             <a
               href="#contact"
